@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Nội Thất LDP</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header__wrap">
+                <span class="header__logo">TRUE</span>
+                <span class="header__logo bold">BUY</span>
+            </div>
+            <div class="header__wrap">
+                <ul class="header__menu">
+                    <li><a class="header__item" href="">Home</a></li>
+                    <li><a class="header__item" href="">About Us</a></li>
+                    <li><a class="header__item" href="">Categories</a></li>
+                </ul>
+                <div onclick="register()" class="header__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22" fill="none">
+                        <path d="M2.05941 8.84C2.09963 8.33881 2.32716 7.87115 2.69668 7.53017C3.06621 7.18918 3.5506 6.9999 4.05341 7H16.1114C16.6142 6.9999 17.0986 7.18918 17.4681 7.53017C17.8377 7.87115 18.0652 8.33881 18.1054 8.84L18.9084 18.84C18.9305 19.1152 18.8954 19.392 18.8052 19.6529C18.7151 19.9139 18.5719 20.1533 18.3847 20.3562C18.1975 20.5592 17.9703 20.7211 17.7174 20.8319C17.4646 20.9427 17.1915 20.9999 16.9154 21H3.24941C2.97333 20.9999 2.70026 20.9427 2.44739 20.8319C2.19452 20.7211 1.96732 20.5592 1.78011 20.3562C1.59289 20.1533 1.44971 19.9139 1.35958 19.6529C1.26945 19.392 1.23432 19.1152 1.25641 18.84L2.05941 8.84V8.84Z" stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14.0825 10V5C14.0825 3.93913 13.6611 2.92172 12.9109 2.17157C12.1608 1.42143 11.1434 1 10.0825 1C9.02165 1 8.00424 1.42143 7.25409 2.17157C6.50395 2.92172 6.08252 3.93913 6.08252 5V10" stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23" fill="none">
+                        <g clip-path="url(#clip0_156_33879)">
+                            <path d="M15.888 10.0625C16.296 10.1823 16.6845 10.3449 17.0534 10.5502C17.4223 10.7556 17.8086 11.0679 18.2122 11.4872C18.6159 11.9064 18.9609 12.4006 19.2474 12.9696C19.5339 13.5386 19.7726 14.2745 19.9635 15.1772C20.1545 16.0799 20.25 17.0917 20.25 18.2126C20.25 19.5303 19.816 20.6576 18.9479 21.5946C18.0799 22.5315 17.0339 23 15.8099 23H4.6901C3.46615 23 2.42014 22.5315 1.55208 21.5946C0.684028 20.6576 0.25 19.5303 0.25 18.2126C0.25 17.0917 0.345486 16.0799 0.536458 15.1772C0.727431 14.2745 0.966146 13.5386 1.2526 12.9696C1.53906 12.4006 1.88411 11.9064 2.28776 11.4872C2.69141 11.0679 3.07769 10.7556 3.44661 10.5502C3.81554 10.3449 4.20399 10.1823 4.61198 10.0625C3.92622 8.99293 3.58333 7.82924 3.58333 6.57143C3.58333 5.68155 3.75911 4.83231 4.11068 4.02372C4.46224 3.21512 4.9375 2.51562 5.53646 1.92522C6.13542 1.33482 6.84505 0.86635 7.66536 0.51981C8.48568 0.17327 9.34722 0 10.25 0C11.1528 0 12.0143 0.17327 12.8346 0.51981C13.6549 0.86635 14.3646 1.33482 14.9635 1.92522C15.5625 2.51562 16.0378 3.21512 16.3893 4.02372C16.7409 4.83231 16.9167 5.68155 16.9167 6.57143C16.9167 7.82924 16.5738 8.99293 15.888 10.0625ZM10.25 1.64286C8.86979 1.64286 7.69141 2.12416 6.71484 3.08677C5.73828 4.04939 5.25 5.21094 5.25 6.57143C5.25 7.93192 5.73828 9.09347 6.71484 10.0561C7.69141 11.0187 8.86979 11.5 10.25 11.5C11.6302 11.5 12.8086 11.0187 13.7852 10.0561C14.7617 9.09347 15.25 7.93192 15.25 6.57143C15.25 5.21094 14.7617 4.04939 13.7852 3.08677C12.8086 2.12416 11.6302 1.64286 10.25 1.64286ZM15.8099 21.3571C16.5738 21.3571 17.227 21.0512 17.7695 20.4395C18.3121 19.8277 18.5833 19.0854 18.5833 18.2126C18.5833 16.1676 18.2426 14.5547 17.5612 13.3739C16.8798 12.1931 15.901 11.5727 14.625 11.5128C13.3663 12.5995 11.908 13.1429 10.25 13.1429C8.59201 13.1429 7.13368 12.5995 5.875 11.5128C4.59896 11.5727 3.62023 12.1931 2.9388 13.3739C2.25738 14.5547 1.91667 16.1676 1.91667 18.2126C1.91667 19.0854 2.18793 19.8277 2.73047 20.4395C3.273 21.0512 3.92622 21.3571 4.6901 21.3571H15.8099Z" fill="black" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_156_33879">
+                            <rect width="20" height="23" fill="white" transform="translate(0.25)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container__header">
+            <div class="container__header-wrap">
+                <div class="container__header-option">
+                    <p>Now, furniture shopping <br>  is simple</p>
+                    <input type="text" placeholder="Search your product here">
+                    <button>Search</button>
+                </div>
+                <span class="container__header-heading">We've got the furniture you need to fill your new home. Browse now for free and get big discounts on everything from tables to lamps!</span>
+            </div>
+            <div class="container__header-info container__header-chair">
+                <h1>Vimle Sofa</h1>
+                <p>2-seat sofa, vissle grey</p>
+                <span>Rp 3.195.000</span>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="container__header-info container__header-table">
+                <h1>Krista Table</h1>
+                <p>Dressing table, light brown</p>
+                <span>Rp 2.199.000</span>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+        <div class="container__body1">
+            <p class="container__body1-heading">Popular Categories</p>
+            <ul class="container__body1-menu">
+                <li class="container__body1-item">Chair
+                    <img class="item-chair" src="/Nội Thất/img/chairsvg.svg" alt="">
+                </li>
+                <li class="container__body1-item">Cabinet
+                    <img class="item-cabinet" src="/Nội Thất/img/cabinet.svg" alt="">
+                </li>
+                <li class="container__body1-item">Lamp
+                    <img class="item-lamp" src="/Nội Thất/img/lamp.svg" alt="">
+                </li>
+                <li class="container__body1-item">Table
+                    <img class="item-table" src="/Nội Thất/img/table.svg" alt="">
+                </li>
+            </ul>
+            <div class="container__body1-warp">
+                <div class="container__body1-small1">
+                    <h1>A Modern Home Starts with Truebuy.</h1>
+                    <p>You'll find the perfect home furnishings without breaking your budget.</p>
+                    <img src="/Nội Thất/img/chairgreen.svg" alt="">
+                </div>
+                <div class="container__body1-small2">
+                    <div class="container__body1-small2--item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width ="100" height="100" viewBox="0 280 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                        <div class="container__body1-small2--wrap">
+                            <h3>A Customized Experience for Every Style</h3>
+                            <p>Our customizing tool allows you to filter by size, color, type of furniture and more!</p>
+                        </div>
+                    </div>
+                    <div class="container__body1-small2--item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width ="100" height="100" viewBox="0 280 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                        <div class="container__body1-small2--wrap">
+                            <h3>Competitive Prices</h3>
+                            <p>The majority of our products are priced at under $1000 - some as low as $89!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container__body2">
+            <div class="container__body2-wrap">
+                <h3>Design your dream home with the perfect furniture.</h3>
+                <span>We're making it easy for you to find your perfect match.</span><br>
+                <button>Explore all product</button>
+            </div>
+            <div class="container__body2-white"></div>
+            <img src="/Nội Thất/img/nền.svg" alt="">
+        </div>
+        <div class="container__body3">
+            <h1 class="container__body3-heading">Our reviews</h1>
+            <div class="container__body3-wrap">
+                <div class="container__body3-item">
+                    <h3>John A</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="107" height="18" viewBox="0 0 107 18" fill="none">
+                        <path d="M17.8333 6.82586H11.0269L8.91667 0L6.80639 6.82586H0L5.49861 11.0382L3.41806 17.8333L8.91667 13.621L14.4153 17.8333L12.305 11.0075L17.8333 6.82586Z" fill="#FFCC32"/>
+                        <path d="M40.125 6.82586H33.3186L31.2083 0L29.098 6.82586H22.2916L27.7902 11.0382L25.7097 17.8333L31.2083 13.621L36.7069 17.8333L34.5966 11.0075L40.125 6.82586Z" fill="#FFCC32"/>
+                        <path d="M62.4167 6.82586H55.6103L53.5 0L51.3898 6.82586H44.5834L50.082 11.0382L48.0014 17.8333L53.5 13.621L58.9987 17.8333L56.8884 11.0075L62.4167 6.82586Z" fill="#FFCC32"/>
+                        <path d="M84.7083 6.82586H77.9019L75.7917 0L73.6814 6.82586H66.875L72.3736 11.0382L70.2931 17.8333L75.7917 13.621L81.2903 17.8333L79.18 11.0075L84.7083 6.82586Z" fill="#FFCC32"/>
+                        <path d="M107 6.82586H100.194L98.0833 0L95.973 6.82586H89.1666L94.6652 11.0382L92.5847 17.8333L98.0833 13.621L103.582 17.8333L101.472 11.0075L107 6.82586Z" fill="#FFCC32"/>
+                    </svg>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</span>
+                </div>
+                <div class="container__body3-item">
+                    <h3>Mike j</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="107" height="18" viewBox="0 0 107 18" fill="none">
+                        <path d="M17.8333 6.82586H11.0269L8.91667 0L6.80639 6.82586H0L5.49861 11.0382L3.41806 17.8333L8.91667 13.621L14.4153 17.8333L12.305 11.0075L17.8333 6.82586Z" fill="#FFCC32"/>
+                        <path d="M40.125 6.82586H33.3186L31.2083 0L29.098 6.82586H22.2916L27.7902 11.0382L25.7097 17.8333L31.2083 13.621L36.7069 17.8333L34.5966 11.0075L40.125 6.82586Z" fill="#FFCC32"/>
+                        <path d="M62.4167 6.82586H55.6103L53.5 0L51.3898 6.82586H44.5834L50.082 11.0382L48.0014 17.8333L53.5 13.621L58.9987 17.8333L56.8884 11.0075L62.4167 6.82586Z" fill="#FFCC32"/>
+                        <path d="M84.7083 6.82586H77.9019L75.7917 0L73.6814 6.82586H66.875L72.3736 11.0382L70.2931 17.8333L75.7917 13.621L81.2903 17.8333L79.18 11.0075L84.7083 6.82586Z" fill="#FFCC32"/>
+                        <path d="M107 6.82586H100.194L98.0833 0L95.973 6.82586H89.1666L94.6652 11.0382L92.5847 17.8333L98.0833 13.621L103.582 17.8333L101.472 11.0075L107 6.82586Z" fill="#FFCC32"/>
+                    </svg>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</span>
+                </div>
+                <div class="container__body3-item">
+                    <h3>Tina T</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="107" height="18" viewBox="0 0 107 18" fill="none">
+                        <path d="M17.8333 6.82586H11.0269L8.91667 0L6.80639 6.82586H0L5.49861 11.0382L3.41806 17.8333L8.91667 13.621L14.4153 17.8333L12.305 11.0075L17.8333 6.82586Z" fill="#FFCC32"/>
+                        <path d="M40.125 6.82586H33.3186L31.2083 0L29.098 6.82586H22.2916L27.7902 11.0382L25.7097 17.8333L31.2083 13.621L36.7069 17.8333L34.5966 11.0075L40.125 6.82586Z" fill="#FFCC32"/>
+                        <path d="M62.4167 6.82586H55.6103L53.5 0L51.3898 6.82586H44.5834L50.082 11.0382L48.0014 17.8333L53.5 13.621L58.9987 17.8333L56.8884 11.0075L62.4167 6.82586Z" fill="#FFCC32"/>
+                        <path d="M84.7083 6.82586H77.9019L75.7917 0L73.6814 6.82586H66.875L72.3736 11.0382L70.2931 17.8333L75.7917 13.621L81.2903 17.8333L79.18 11.0075L84.7083 6.82586Z" fill="#FFCC32"/>
+                        <path d="M107 6.82586H100.194L98.0833 0L95.973 6.82586H89.1666L94.6652 11.0382L92.5847 17.8333L98.0833 13.621L103.582 17.8333L101.472 11.0075L107 6.82586Z" fill="#FFCC32"/>
+                    </svg>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</span>
+                </div>
+            </div>
+            <div class="container__body3-discount">
+                <img src="/Nội Thất/img/discount.jpg" alt="">
+                <div class="container__body3-discount--wrap">
+                    <h1 class="container__body3-discount--heading">Get Discount up to 50% off Today!</h1>
+                    <button>Explore all product</button>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <footer>
+        <div class="footer__wrap">
+            <ul class="footer__menu"> Company
+                <li class="up"><a class="footer__item" href="/">Home</a></li>
+                <li><a class="footer__item" href="/">About Us</a></li>
+                <li><a class="footer__item" href="/">Categories</a></li>
+                <li><a class="footer__item" href="/">Contact Us</a></li>
+            </ul>
+            <ul class="footer__menu"> Support
+                <li class="up"><a class="footer__item" href="/">Help Center</a></li>
+                <li><a class="footer__item" href="/">Safety Center</a></li>
+                <li><a class="footer__item" href="/">Community Guidelines</a></li>
+            </ul>
+            <ul class="footer__menu"> Legal
+                <li class="up"><a class="footer__item" href="/">Cookies Policy</a></li>
+                <li><a class="footer__item" href="/">Privacy Policy</a></li>
+                <li><a class="footer__item" href="/">Terms of Service</a></li>
+            </ul>
+            <div class="footer__app">
+                <span>Install App</span>
+                <img src="/Nội Thất/img/App Store Badge.png" alt="">
+                <img src="/Nội Thất/img/Google Play Badge.svg" alt="">
+            </div>
+        </div>
+    </footer>
+    <!-- <div class="modal">
+        <div class="modal__body">
+            <div class="modal__header">
+                <button class="modal__header-register btn">Đăng ký</button>
+                <button class="modal__header-login btn">Đăng nhập</button>
+            </div>
+            <div class="modal__form">
+                <input type="text" placeholder="Email của bạn">
+                <input type="password" placeholder="Nhập mật khẩu">
+                <input type="password" placeholder="Nhập lại mật khẩu">
+            </div>
+            <p class="modal__policy">Bằng việc đã đăng ký, bạn đã đồng ý với Nội Thất LDP về 
+                <a href="#">Điều khoản dịch vụ</a>
+                <span>& </span>
+                <a href="#">Chính sách bảo mật</a>
+            </p>
+            <div class="modal__btn">
+                <button class="btn-register btn-back">Trở lại</button>
+                <button class="btn-register">Đăng ký</button>
+            </div>
+        </div>
+    </div> -->
+    <script src="main.js"></script>
+</body>
+</html>
